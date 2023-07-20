@@ -7,7 +7,7 @@ locals {
 benchmark "aws_baseline" {
   title         = "AWS Foundational Security Best Practices + CIS V2.0.0"
   description   = "The AWS Foundational Security Best Practices standard is a set of controls that detect when your deployed accounts and resources deviate from security best practices."
-  documentation = file("./foundational_security/docs/foundational_security_overview.md")
+  documentation = file("./aws_baseline/docs/foundational_security_overview.md")
   children = [
     benchmark.foundational_security_account,
     benchmark.foundational_security_acm,
