@@ -1,6 +1,9 @@
-# AWS Compliance Mod for Steampipe
+# AWS Compliance Mod for Steampipe + AWS Basline
 
 475+ checks covering industry defined security best practices across all AWS regions. Includes full support for multiple best practice benchmarks including PCI DSS, AWS Foundational Security, CISA Cyber Essentials, FedRAMP, FFIEC, GxP 21 CFR Part 11, GxP EU Annex 11, HIPAA Final Omnibus Security Rule 2013, HIPAA Security Rule 2003, NIST 800-53, NIST CSF, Reserve Bank of India, Audit Manager Control Tower **and the latest (v1.5.0) CIS benchmarks**.
+
+This repo expands on the AWS Compliance Mod for Steampipe with a new benchmark `aws_baseline`. This net new benchmark combines AWS Foundational Security Best Practices + AWS CIS v2.0.0.
+
 
 Run checks in a dashboard:
 ![image](https://raw.githubusercontent.com/turbot/steampipe-mod-aws-compliance/main/docs/aws_cis_v140_dashboard.png)
@@ -9,7 +12,7 @@ Or in a terminal:
 ![image](https://raw.githubusercontent.com/turbot/steampipe-mod-aws-compliance/main/docs/aws_cis_v140_console.png)
 
 Includes support for:
-* [AWS_Basline]🚀 New!
+* AWS_Basline🚀 New!
 * [AWS CIS Controls v8 IG1](https://hub.steampipe.io/mods/turbot/aws_compliance/controls/benchmark.cis_controls_v8_ig1)
 * [AWS CIS v1.2.0](https://hub.steampipe.io/mods/turbot/aws_compliance/controls/benchmark.cis_v120)
 * [AWS CIS v1.3.0](https://hub.steampipe.io/mods/turbot/aws_compliance/controls/benchmark.cis_v130)
@@ -90,7 +93,7 @@ steampipe check all
 Run a single benchmark:
 
 ```sh
-steampipe check benchmark.cis_v150
+steampipe check aws_baseline
 ```
 
 Run a specific control:
