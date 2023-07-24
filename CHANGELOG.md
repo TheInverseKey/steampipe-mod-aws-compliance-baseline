@@ -1,3 +1,9 @@
+## v0.77 [2023-07-11]
+_Enhancements_
+
+- The `AWS_Baseline` benchmark has been created to better suit baseline account review with the primary standards that AWS accounts should follow. This includes AWS Foundations and CIS v 2.0.0.
+
+
 ## v0.76 [2023-07-11]
 
 _Enhancements_
