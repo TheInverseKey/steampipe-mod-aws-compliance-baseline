@@ -1,8 +1,6 @@
 ## Overview
 
-The AWS Foundational Security Best Practices standard is a set of controls that
-detect when your deployed accounts and resources deviate from security best
-practices.
+This repo is for the AWS Foundational Security Best Practices and CIS v2.0.0 automated controls.
 
 The standard allows you to continuously evaluate all of your AWS accounts and
 workloads to quickly identify areas of deviation from best practices. It
@@ -12,7 +10,8 @@ your organization’s security posture.
 ## Control Categories
 
 These are the available categories for AWS Security Hub controls. The category
-for a control reflects the security function that the control applies to.
+for a control reflects the security function that the control applies to. The dashboard is broken in to each respective service.
+
 
 ### Identify
 
