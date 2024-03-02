@@ -60,9 +60,9 @@ locals {
 
 }
 
-mod "aws_baseline" {
+mod "aws_compliance" {
   # hub metadata
-  title         = "AWS Compliance Baseline"
+  title         = "AWS Compliance"
   description   = "Run individual configuration, compliance and security controls or full compliance benchmarks for CIS, FFIEC, PCI, NIST, HIPAA, RBI CSF, GDPR, SOC 2, Audit Manager Control Tower, FedRAMP, GxP and AWS Foundational Security Best Practices controls across all your AWS accounts using Steampipe."
   color         = "#FF9900"
   documentation = file("./docs/index.md")
@@ -78,11 +78,6 @@ mod "aws_baseline" {
   require {
     plugin "aws" {
       version = "0.97.0"
-    }
-  }
-  require {
-  mod "github.com/turbot/steampipe-mod-aws-compliance" {
-    version = "0.85"
     }
   }
 }
